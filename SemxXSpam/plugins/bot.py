@@ -22,10 +22,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        event = await e.reply("𝙋𝙤𝙣𝙜!", parse_mode=None, link_preview=None )
+        event = await e.reply("JINDA HU", parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"🎉 BHOSDIWALA ✘SPAM 🤖!\n✘`{ms}` ms\n 😈𝙍𝙀𝘼𝘿𝙔 𝙁𝙊𝙍 𝙎𝙀𝙈𝙓🤧")
+        await event.edit(f"🎉 SPAM ✘ GOD 🤖!\n✘`{ms}` ms\n 😈AB KIDS KI MAA CHUDEGI")
         
         
 
@@ -41,7 +41,7 @@ async def ping(e):
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "**Restarting Your Semx X Spam...**\nPlease Wait For Few Seconds."
+        text = "**Restarting Your SPAM X GOD...**\nKUCH DER RUKJA BSDK."
         await e.reply(text)
         try:
             await MK1.disconnect()
@@ -104,7 +104,7 @@ sudousers = os.environ.get("SUDO_USER", None)
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
     if event.sender_id == OWNER_ID:
-        ok = await event.reply(f"__Adding User As Sudo...__")
+        ok = await event.reply(f"__GAMDU KO SUDO MIL GAYA")
         mks = "SUDO_USER"
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -117,12 +117,12 @@ async def tb(event):
         try:
             target = await get_user(event)
         except Exception:
-            await ok.edit(f"Reply To a User !!")
+            await ok.edit(f"USKO TAG KAR BALAK")
         if sudousers:
             newsudo = f"{sudousers} {target}"
         else:
             newsudo = f"{target}"
-        await ok.edit(f"**Added** `{target}` **As Sudo User** ✨ \nRestarting... Please Wait Few Seconds.")
+        await ok.edit(f"**MILGAYA** `{target}` **SUDO MIL GAYA AB GAND DE** ✨ \nRestarting... FIR SE RUKJA THODI DER.")
         heroku_var[mks] = newsudo   
    
      
