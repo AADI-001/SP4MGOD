@@ -105,13 +105,13 @@ async def _(e):
             user_idd = a.id
             user_id = int(user_idd)
             if int(user_id) in RyanX:
-                text = f"Sorry, I Can't Raid On SemxX's Owner."
+                text = f"GANDU YEH OWNER HE."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) == OWNER_ID:
-                text = f"This Guy is Owner Of These Bots."            
+                text = f"JE TAMHARO BAAP OWNER CHE."            
                 await event.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) in SUDO_USERS:
-                text = f"This Guy is a Sudo User."
+                text = f"SUDO USER HE YEH KID."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 que[user_id] = []
@@ -126,20 +126,20 @@ async def _(e):
             user_idd = umser.id
             user_id = int(user_idd)
             if int(user_id) in RyanX:
-                text = f"Sorry, I Can't Raid  On SemxX's Owner."
+                text = f"GANDU YEH OWNER HE."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) == OWNER_ID:
-                text = f"This Guy is Owner Of These Bots."
+                text = f"JE TAMHARO BAAP OWNER CHE."
                 await event.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) in SUDO_USERS:
-                text = f"This Guy is a Sudo User."
+                text = f"SUDO USER HE YEH KID."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 que[user_id] = []
                 gey = que.get(user_id)
                 phucker = [user_id]
                 gey.append(phucker)
-                text = f"Activated ReplyRaid !! ✅"
+                text = f"ReplyRaid LAG GAYI!! ✅"
                 await e.reply(text, parse_mode=None, link_preview=None )
         else:
             await e.reply(usage)
@@ -172,7 +172,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "Reply Raid De-Activated !! ✅"
+            text = "Reply Raid HAT GAYI!! ✅"
             await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -183,7 +183,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "Reply Raid De-Activated !! ✅"
+            text = "Reply Raid HAT GAYI!! ✅"
             await e.reply(text, parse_mode=None, link_preview=None )
         else:
             await e.reply(usage)
