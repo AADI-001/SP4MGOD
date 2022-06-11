@@ -35,6 +35,6 @@ async def logs(legend):
         logfile = open("BotSpamLogs.txt", "w")
         logfile.write("⚡ Semx X Spam ⚡ [ BotSpam Logs ]\n\n" + logs)
         logfile.close()
-        await MK1.send_file(legend.chat_id, "BotSpamLogs.txt", caption=f"⚡ 𝐒𝐞𝐦𝐱 𝐗 𝐒𝐩𝐚𝐦 𝐋𝐨𝐠𝐬 ⚡\n**Time Taken :** `{ms} Seconds`")
+        await MK1.send_file(legend.chat_id, "BotSpamLogs.txt", caption=f"⚡ SP4M X GOD 𝐋𝐨𝐠𝐬 ⚡\n**Time Taken :** `{ms} Seconds`")
     else:
-        await legend.reply("Sorry, Only Owner Can Access This Command.")
+        await legend.reply("U KID VRO ONLY OWNER ACCESS THIS.")
