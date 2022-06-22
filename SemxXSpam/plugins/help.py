@@ -65,7 +65,7 @@ Command :
 **PackSpam :** Sticker Pack Spam
 1) {hl}packspam <reply to any sticker>
 
-**© @rudra_hun_vaii**
+**© @xx_ll_sp4mgod_ll_xx**
 """
 
                  
